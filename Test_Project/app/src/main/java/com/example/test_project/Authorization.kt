@@ -4,19 +4,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
+import android.widget.Button
 import android.widget.Toast
 
 class Authorization : AppCompatActivity() {
     private lateinit var edUsername : EditText
     private lateinit var edPassword : EditText
-    private lateinit var btnAddUser : EditText
-    private lateinit var btnEnterAuth : EditText
+    private lateinit var btnAddUser : Button
+    private lateinit var btnEnterAuth : Button
 
     private lateinit var sqLiteHelper: SQLiteHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_registration)
 
         initView()
         sqLiteHelper = SQLiteHelper(this)
