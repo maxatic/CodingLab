@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ContentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <EditText
+        android:id="@+id/Followers_number"
+        android:layout_width="78dp"
+        android:layout_height="29dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="390dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="560dp"
+        android:background="@color/text_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Avatar"
+        android:layout_width="124dp"
+        android:layout_height="117dp"
+        app:srcCompat="@drawable/avatar_test"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <TextView
+        android:id="@+id/Full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <EditText
+        android:id="@+id/Full_name_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Maxat Issaliyev"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <EditText
+        android:id="@+id/Last_name_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="435dp" />
+
+    <TextView
+        android:id="@+id/Last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <TextView
+        android:id="@+id/Following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Following"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <TextView
+        android:id="@+id/Followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <EditText
+        android:id="@+id/Following_number"
+        android:layout_width="78dp"
+        android:layout_height="29dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="picasso"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="228dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@picasso"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
