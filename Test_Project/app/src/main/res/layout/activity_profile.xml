@@ -7,111 +7,283 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <EditText
-        android:id="@+id/Followers_number"
-        android:layout_width="78dp"
-        android:layout_height="29dp"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="509dp" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="390dp"
-        android:layout_height="3dp"
-        android:layout_marginTop="560dp"
-        android:background="@color/text_purple"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Avatar"
+        android:layout_width="103dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="34dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="250dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:cardCornerRadius="250dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/avatar_test" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="139dp"
+        android:autoSizeTextType="uniform"
+        android:text="picasso"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/teg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="179dp"
+        android:text="@picasso"
+        android:textColor="@color/bluesky"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/Avatar"
-        android:layout_width="124dp"
-        android:layout_height="117dp"
-        app:srcCompat="@drawable/avatar_test"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="111dp" />
-
-    <TextView
-        android:id="@+id/Full_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Full name"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="333dp" />
-
     <EditText
         android:id="@+id/Full_name_get"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="375dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="256dp"
+        android:background="#00000000"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Maxat Issaliyev"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="357dp" />
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/Last_name_get"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="435dp" />
+    <View
+        android:layout_width="375dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="379dp"
+        android:background="@color/text_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Last_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Last Name"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="416dp" />
+        android:layout_marginTop="320dp"
+        android:text="Email"
+        android:textColor="@color/text_purple"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/Last_name_get"
+        android:layout_width="375dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="339dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="maxatic@gmail.com"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="237dp"
+        android:text="Full name"
+        android:textColor="@color/text_purple"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <View
+        android:layout_width="375dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="299dp"
+        android:background="@color/text_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Followers_number"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="419dp"
+        android:background="@color/background"
+        android:text="11 friends"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="215dp" />
 
     <TextView
         android:id="@+id/Following"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
         android:text="Following"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="490dp" />
+        android:textColor="@color/text_purple"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/Following_number"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="419dp"
+        android:background="@color/background"
+        android:text="21 friends"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="18dp" />
 
     <TextView
         android:id="@+id/Followers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
         android:text="Followers"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="490dp" />
+        android:textColor="@color/text_purple"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="215dp" />
+
+    <View
+        android:layout_width="375dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="462dp"
+        android:background="@color/text_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Social_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="477dp"
+        android:text="Social URL"
+        android:textColor="@color/text_purple"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="18dp" />
 
     <EditText
-        android:id="@+id/Following_number"
-        android:layout_width="78dp"
-        android:layout_height="29dp"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="509dp" />
+        android:id="@+id/Url"
+        android:layout_width="375dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="496dp"
+        android:background="@color/background"
+        android:text="t.me/maxa***"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="375dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="539dp"
+        android:background="@color/text_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/username"
+        android:id="@+id/Interests"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="picasso"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="228dp"
-        tools:visibility="visible" />
+        android:layout_marginTop="557dp"
+        android:text="Interests"
+        android:textColor="@color/text_purple"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="18dp" />
 
-    <TextView
-        android:id="@+id/textView6"
+    <EditText
+        android:id="@+id/interest_1"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="576dp"
+        android:background="@color/background"
+        android:text="Leather Craft"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/interest_2"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="576dp"
+        android:background="@color/background"
+        android:text="Gachi bor'ba"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="215dp" />
+
+    <EditText
+        android:id="@+id/interest_3"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="601dp"
+        android:background="@color/background"
+        android:text="Intermediate Chess"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <EditText
+        android:id="@+id/interest_4"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="601dp"
+        android:background="@color/background"
+        android:text="Python Master"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="215dp" />
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@picasso"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="254dp" />
+        android:layout_height="35dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/border_rounded_gradient"
+        android:text="Edit"
+        android:textColor="@color/white"
+        app:backgroundTint="@drawable/border_rounded_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
