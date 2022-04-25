@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Test_Project">
-        <activity android:name=".Profile" android:exported="true">
+        <activity
+            android:name=".SkillCheckSearchActivity"
+            android:exported="false"
+            android:label="@string/title_activity_skill_check_search" />
+        <activity
+            android:name=".Profile"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
